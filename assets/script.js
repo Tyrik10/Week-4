@@ -8,6 +8,8 @@ var button2 = document.querySelector(".btn2")
 var button3 = document.querySelector(".btn3")
 var button4 = document.querySelector(".btn4")
 var answerButtons = document.querySelector(".btn")
+var SCORE_POINTS = 100
+var scoreBtn = document.querySelector("scores-btn")
 var questions = [
 
     {
@@ -58,7 +60,14 @@ function checkAnswer(event) {
     }
     currentQuestion++
     startQuiz()
+    end()
 }
-
+function end() {
+    alert('The quiz is over')
+    // display.innerText = "It's over"
+    quizArea.style.display = "none"
+    
+}
+scoreBtn.addEventListener('click')
 startButton.addEventListener('click', startQuiz)
 //answerButtons.addEventListener('click',checkAnswer)
