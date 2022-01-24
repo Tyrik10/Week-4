@@ -16,3 +16,12 @@
     border-radius: 5px;
     
 }
+
+.hud{
+    display: flex;
+    justify-content: space-between;
+}
+.end{
+    display: none;
+    text-align: center;
+}

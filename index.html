@@ -13,7 +13,7 @@
     <div class="quiz">
         <h1>QUIZ START!</h1>
         
-        <button id="start" onclick="setTimeout(end,10000)">Start Quiz</button>
+        <button id="start" onclick="setTimeout(end,30000)">Start Quiz</button>
         <button id="scores-btn">High Scores</button>
 
     </div>
@@ -23,6 +23,16 @@
         <button class= "btn2 btn" onclick="checkAnswer(event)">2</button>
         <button class= "btn3 btn" onclick="checkAnswer(event)">3</button>
         <button class= "btn4 btn" onclick="checkAnswer(event)">4</button>
+    </div>
+    <div class="hud">
+        <h2 id="score">Score
+            <h3 id="score-num">0</h3>
+        </h2>
+
+        <h2 id="timer">Time Left:</h2>
+    </div>
+    <div class="end">
+        <h4>The quiz is over!</h4>
     </div>
     <script src="assets/script.js"></script>
 </body>
